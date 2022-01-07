@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou simplesmente aumente e diminua o tamanho da janela do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>vamos aprender a reproduzir áudio em HTML5</p>
+    
+    <p>carregando com a tag audio simpes</p>
+    <!--tag no formato mais simples-->
+    <audio src="midia/peter-tosh.mp3" controls></audio>
+    <p>carregando com a tag audio mais completa</p>
+    <!--tag no formato mais completo-->
+    <audio preload="metadata" controls autoplay loop>
+        <!--O navegador seleciona o primeiro formato de áudio compatível-->
+        <source src="midia/peter-tosh.mp3" type="audio/mpeg">
+        <source src="midia/peter-tosh.ogg" type="audio/ogg">
+    </audio>
+
+    <h1>Reproduzindo Vídeo hospedados no meu servidor</h1>
+    <video controls width="560" poster="imagens/mar-thumb.png">
+        <source src="midia/mar.mp4" type="video/mp4">
+    </video>
+
+    <h1>Reproduzinddo vídeo do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YSrQlvTfB_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
