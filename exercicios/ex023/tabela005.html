@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas - Exercício 5</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        thead{
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        .amarelo{
+            background-color: yellow;
+        }
+        .vermelho{
+            background-color: red;
+        }
+        .verde{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!--A tag colgrup serve para facilitar a formatação de colunas, com ela é possível mapear todas as colunas individualmente ou usar o atributo span para informar em quantas colunas uma classe css será aplicada-->
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho">
+            <col class="verde" span="2">
+        </colgroup>
+        <caption>Formatar colunas de uma tabela</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Rafael Domingos</td>
+            <td>M</td>
+            <td>36</td>
+            <td>Dev Frontend</td>
+        </tr>
+        <tr>
+            <td>Gabriel Torres</td>
+            <td>M</td>
+            <td>54</td>
+            <td>Técnico de Informática</td>
+        </tr>
+        <tr>
+            <td>Gustavo Guanabara</td>
+            <td>M</td>
+            <td>43</td>
+            <td>Professor</td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+    </table>
+    
+</body>
+</html>
